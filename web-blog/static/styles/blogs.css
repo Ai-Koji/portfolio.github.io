@@ -1,0 +1,116 @@
+main h1 {
+    text-align: center;
+    font-size: 30pt;
+    margin-bottom: 30px;
+}
+
+.arguments {
+    display: flex;
+}
+
+.arguments input {
+    width: 95%;
+    padding: 0.5%;
+    padding-left: 1.5%;
+    border: 2.5px solid #69cbc3;
+}
+
+.arguments button {
+    display: block;
+    border: 2.5px solid #69cbc3;
+    color: #448a8d;
+    cursor: pointer;
+}
+
+.arguments-block-left button{
+    padding: 5px ;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 3%;
+}
+
+
+.arguments-block-left {
+    width: 80%;
+}
+
+.arguments-block-right {
+    width: 20%;
+}
+
+.arguments-block-right button{
+    width: 100%;
+    padding: 5px ;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+
+
+.blog {
+    border: 4px solid #448a8d;
+    padding: 1.5%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.blog-left-block {
+    width: 100%;
+}
+
+.blog-right-block button {
+    width: auto;
+    padding: 5px ;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 3%;
+    display: block;
+    border: 2.5px solid #69cbc3;
+    color: #448a8d;
+    cursor: pointer;
+}
+
+.black-film {
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.create-blog-form {
+    padding: 3vw;
+    width: 30vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+
+.create-blog-form input {
+    width: 95%;
+    padding: 2%;
+    margin-bottom: 10px;
+    border: 2.5px solid #69cbc3;
+}
+
+.create-blog-form button {
+    padding: 5px ;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 3%;
+    display: block;
+    border: 2.5px solid #69cbc3;
+    color: #448a8d;
+    cursor: pointer;
+}
