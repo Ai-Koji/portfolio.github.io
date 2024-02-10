@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drafts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="all">
+        <div class="all-game">
+            <!-- профиль -->
+            <section class="icon-frame">
+                <img class="butterfly1" alt="butterfly" src="img/butterfly.png" width="100px">
+                <img class="frame" alt="icon" src="img/frame.png" width="100px">
+                <h1 class="icon-nobody">?</h1>
+            </section>
+            <section class="game"> 
+                <div class="header"> <!--заголовок-->
+                    <h1>У<span>г</span>ад<span>а</span>й чи<span>с</span>ло</h1>
+                    <h2 class="interval-header"></h2>
+                </div>
+
+                <div class="interval"> <!--интервал значений-->
+                    <h3 class="">задайте интервал</h3>
+                    <div class="input">
+                        <input type="text" placeholder="от" class="value1" id="minNumber">
+                        <input type="text" placeholder="до" class="value1" id="maxNumber">
+                        <button class="play-btn" onclick="play()">играть</button>
+                    </div>
+                </div>
+                <div class="play"> <!--сама игра-->
+                    <p class="input-text">введите ваше число:  </p>
+                    <input type="text" class="value" id="value">
+                    <button class="check" onclick="check()">проверить</button>
+                    <p class="red">загаданное число <span id="more-less">больше/меньше</span></p>
+                </div>
+                
+                <h2 id="game-over">GAME OVER <br>ответ:<span id="answer">-</span></h2>
+                
+                <div class="result"> <!--результат-->
+                    <p>счёт:<span id="score">0</span></p>
+                    <p>рекорд:<span id="record">0</span></p>
+                    <p>попыток:<span id="attempt">-</span></p>
+                </div>
+
+                <!-- различные ошибки -->
+                <h1 class="error" id="error-only-num">только цифры! </h1>
+
+                <h2 class="error" id="error-min-max">только цифры от <span id="error-minNumber">-</span> до <span id="error-maxNumber">-</span>!</h2> <!--!!!!!!!!!!!--><!--ошибка от min_number до max_number-->
+                
+                <h3 class="error" id="error-min-to-max">только от минимума к максимуму</h3>
+
+                <h3 class="error" id="error-only-p-numbers">только положительные числа</h3>
+
+                <h3 class="error" id="error-coincidence">числа не должны быть одинаковыми</h3>
+
+                <button id="again" onclick="again()">Ёще раз</button>
+                <button id="continue" onclick="countin()">продолжить</button>
+                </section>
+        </div>
+        <img class="butterfly2" alt="butterfly" src="img/butterfly.png" width="100px">
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>

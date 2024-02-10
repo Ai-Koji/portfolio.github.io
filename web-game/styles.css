@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+body {
+    background-color: #161616;
+    font-family: 'Jost', sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 80px;
+    margin-bottom: 0
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 40px;
+}
+
+span {
+    color: #FF0000;
+}
+
+.red {
+    color: #FD3E3E;
+}
+
+
+.all {
+    display: flex;
+    width: 1358px;
+    height: 651px;
+    margin: 0 auto;
+}
+
+.all-game {
+    display: flex;
+    width: 80%;
+}
+
+.icon-frame {
+    width: 39.5%;
+    padding-top: 17%;
+    text-align: center;
+    position: relative;
+}
+
+.icon-nobody {
+    position: absolute;
+    color: #FFFFFF;
+    left: 43%;
+    top: 48%;
+    z-index: 1;
+    font-size: 350%
+}
+
+.frame {
+    width: 100%;
+    position: relative;
+}
+
+.butterfly1 {
+    width: 45%;
+    left: 25%;
+    top: 15.75%;
+    position: absolute;
+    z-index: 1;
+}
+  
+.butterfly2 {
+    margin-top: 5px;
+    margin-right: 5px;
+    position: relative;
+    transform: scale(-1.05, 1.05);
+    width: 20%;
+    height: 42%;
+}
+
+.game {
+    margin: 0;
+    margin-top: 19%;
+    width: auto;
+    margin-left: 5%;
+}
+
+.interval-header {
+    display: none;
+}
+
+.interval {
+    
+}
+
+h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.value1 {
+    width: 150px;
+    height: 60px;
+    border: none;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Jost', sans-serif;
+}
+
+.play-btn {
+    margin-top: 0;
+    margin-left: 13px;
+    width: 130px;
+    height: 56px;
+    background-color: #E25656;
+    border: 3px solid #FD3E3E;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.play {
+    display: none;
+}
+
+.header {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.error {
+    color: #F03D3D;
+}
+
+#error-only-num {
+    display: none;
+}
+
+#error-min-max {
+    display: none;
+}
+
+#error-min-to-max {
+    display: none;
+}
+
+#error-only-p-numbers {
+    display: none;
+}
+#error-coincidence {
+    display: none;
+}
+
+
+#game-over {
+    display: none;
+    color: #F03D3D;
+}
+
+.input-text {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#value {
+    width: 272px;
+    height: 98px;
+    border: none;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Jost', sans-serif;
+}
+
+.check {
+    margin-top: 0;
+    margin-left: 13px;
+    width: 220px;
+    height: 56px;
+    background-color: #E25656;
+    border: 3px solid #FD3E3E;
+    color: #FFFFFF;
+    font-size: 30px;
+    
+}
+
+.result {
+    /* flex */
+    display: flex; 
+    display: none;
+}
+.result p {
+    margin-top: 20px;
+    margin-left: 3%;
+    margin-right: 22%;
+}
+
+
+#again {
+    display: none;
+    font-size: 30px;
+    position: fixed;
+    bottom: 44px;
+    right: 46px;
+    color: #FFFFFF;
+    background-color: #F03D3D;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 50px 10px;
+    text-decoration: none;
+}
+
+
+#continue {
+    display: none;
+    font-size: 30px;
+    position: fixed;
+    bottom: 100px;
+    right: 46px;
+    color: #FFFFFF;
+    background-color: #F03D3D;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 80px 10px;
+    text-decoration: none;
+}
