@@ -48,8 +48,8 @@ const musicText = document.querySelector('.music-text p');
 const songs = [
     {
         title: 'лесник',
-        image: '/frontend/static/images/albums/korol-i-shut.jpg',
-        audio: '/frontend/static/audio/lesnik.mp3',
+        image: 'static/images/albums/korol-i-shut.jpg',
+        audio: 'static/audio/lesnik.mp3',
         text: `[Текст песни «Лесник»]
 
     [Куплет 1]
@@ -121,8 +121,8 @@ const songs = [
     },
     {
         title: 'Прыгну со скалы',
-        image: '/frontend/static/images/albums/acoustic.jpg',
-        audio: '/frontend/static/audio/scala.mp3',
+        image: 'static/images/albums/acoustic.jpg',
+        audio: 'static/audio/scala.mp3',
         text: `[Текст песни «Прыгну со скалы»]
 
     [Куплет 1]
@@ -171,8 +171,8 @@ const songs = [
     },
     {
         title: 'Джокер',
-        image: '/frontend/static/images/albums/prodavets-koshmarov.jpg',
-        audio: '/frontend/static/audio/djoker.mp3',
+        image: 'static/images/albums/prodavets-koshmarov.jpg',
+        audio: 'static/audio/djoker.mp3',
         text: `[Текст песни «Джокер»]
 
     [Интро]
@@ -254,8 +254,8 @@ const songs = [
     },
     {
         title: 'Кукла колдуна',
-        image: '/frontend/static/images/albums/acoustic.jpg',
-        audio: '/frontend/static/audio/cucla.mp3',
+        image: 'static/images/albums/acoustic.jpg',
+        audio: 'static/audio/cucla.mp3',
         text: `[Текст песни «Кукла колдуна»]
 
     [Куплет 1]
@@ -321,8 +321,8 @@ const songs = [
     },
     {
         title: 'Валет и дама',
-        image: '/frontend/static/images/albums/korol-i-shut.jpg',
-        audio: '/frontend/static/audio/valet-i-dama.mp3',
+        image: 'static/images/albums/korol-i-shut.jpg',
+        audio: 'static/audio/valet-i-dama.mp3',
         text: `[Текст песни "Валет и Дама"]
 
     [Куплет]
