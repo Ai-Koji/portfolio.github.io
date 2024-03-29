@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/gallery.css">
+    <link rel="stylesheet" href="../static/styles/main-styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Король и Шут</title>
+</head>
+
+<body>
+    <!-- загрузка -->
+    <div id="loader">
+        <img src="../static/images/loader_image.jpeg" alt="">
+        <h1>Загрузка...</h1>
+    </div>
+
+    <!-- скрол к наву -->
+    <button href="#" id="scroll-to-top"><img src="../static/images/arrow-up.svg" alt=""></button>
+
+    <header>
+        <nav>
+            <a href="main.html" class="nav-logo"><img src="../static/images/logo.svg" alt=""></a>
+            <div class="desktop nav-buttons">
+                <a href="discography.html" class="nav-button">Дискография</a>
+                <a href="biography.html" class="nav-button">Горшок</a>
+                <a href="all-members.html" class="nav-button">Участники</a>
+                <a href="gallery.html" class="nav-button active">Галлерея</a>
+            </div>
+
+            <button><img src="../static/images/menu.svg" alt="" onclick="OpenCloseNavbar()"></button>
+            <!-- open navbuttons -->
+            <div class="mobile" id="">
+                <a href="discography.html" class="nav-button">Дискография</a>
+                <a href="biography.html" class="nav-button">Горшок</a>
+                <a href="all-members.html" class="nav-button">Участники</a>
+                <a href="gallery.html" class="nav-button active">Галлерея</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Галлерея</h1>
+        <h2>Концерты</h2>
+        <div class="videos">
+            <button id="prevVideo" onClick="moveVideos(-1, 6)"><img src="../static/images/arrow-prev.svg" alt=""></button>
+            <div class="carousel">
+                <iframe src="https://www.youtube.com/embed/CQBZprU_Lb4" frameborder="0" width="100%"
+                    height="800"></iframe>
+                <iframe src="https://www.youtube.com/embed/yYImMq_kZgU" frameborder="0" width="100%"
+                    height="800"></iframe>
+                <iframe src="https://www.youtube.com/embed/rgm9wSofz4U" frameborder="0" width="100%"
+                    height="800"></iframe>
+                <iframe src="https://www.youtube.com/embed/Svb9VRVqul8" frameborder="0" width="100%"
+                    height="800"></iframe>
+                <iframe src="https://www.youtube.com/embed/chEvWJQa6UY" frameborder="0" width="100%"
+                    height="800"></iframe>
+                <iframe src="https://www.youtube.com/embed/PHanv-bB_ZE" frameborder="0" width="100%"
+                    height="800"></iframe>
+            </div>
+            <button id="nextVideo" onClick="moveVideos(1, 6)"><img src="../static/images/arrow-next.svg" alt=""></button>
+        </div>
+        <h2>Фотографии</h2>
+        <div class="images">
+            <div class="image">
+                <img src="" alt="">
+            </div>
+
+        </div>
+
+        <!-- галлерея -->
+        <div class="gallery">
+            <figure onclick="EnlargeImage(0)">
+                <img src="https://sun9-72.userapi.com/impf/c621618/v621618023/21bc/Ph4h2Ffi6J8.jpg?size=800x600&quality=96&sign=70c841fdc0981e7eef2456098c988db7&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(1)">
+                <img src="https://sun9-52.userapi.com/impf/c621618/v621618023/2194/L0Ne4I9G55I.jpg?size=426x600&quality=96&sign=e73070086751ded5146df5519d38e420&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(2)">
+                <img src="https://sun9-57.userapi.com/impf/c621618/v621618023/208b/R8AV9jn5i6k.jpg?size=300x240&quality=96&sign=89a1d145e5520d1153f04e720c65758e&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(3)">
+                <img src="https://sun9-22.userapi.com/impf/c621618/v621618023/207d/F_IHNpbjBuc.jpg?size=500x756&quality=96&sign=85be4bcfbaffc5eacd323743e4758d6d&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(4)">
+                <img src="https://sun9-46.userapi.com/impf/c621618/v621618023/2060/R-y5QwM-uHg.jpg?size=297x185&quality=96&sign=4655e4765e1701bb9abadf47729804f3&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(5)">
+                <img src="https://sun9-17.userapi.com/impf/c621618/v621618023/1d30/nCYHX1wQ4pk.jpg?size=176x208&quality=96&sign=5723d45090dc9cc90db0eb87c8708da0&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(6)">
+                <img src="https://sun9-5.userapi.com/impf/c621618/v621618023/1caf/VN6xQQDFpU0.jpg?size=695x480&quality=96&sign=05ac8b9482c620da80fc982ad342c282&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(7)">
+                <img src="https://sun9-16.userapi.com/impf/c621618/v621618023/1ccd/KU9eqNUTsT4.jpg?size=301x450&quality=96&sign=052091bf8a056b2952267309a5e554dc&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(8)">
+                <img src="https://sun9-36.userapi.com/impf/c621618/v621618023/1f7f/LMPdy6y4XAE.jpg?size=240x320&quality=96&sign=2d8a704ed732bc2bc735e7dc9b3296fd&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(9)"  >
+                <img src="https://sun9-53.userapi.com/impf/c621618/v621618023/1da0/u59il8C22GU.jpg?size=240x320&quality=96&sign=b0f98ed23be338cdf23e5ae73a4a7fbc&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(10)"  >
+                <img src="https://sun9-80.userapi.com/impf/c621618/v621618023/1c9f/uJsXm94tYgY.jpg?size=673x480&quality=96&sign=438ef93ac7ab99b16cd2a76d0f901310&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(11)"  >
+                <img src="https://sun9-62.userapi.com/impf/c621618/v621618023/1b32/sxUNHmySofY.jpg?size=720x480&quality=96&sign=d1e58719de39f06ddd038665a0bc7288&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(12)"  >
+                <img src="https://sun9-40.userapi.com/impf/c621618/v621618023/19c2/MfI9mLyIciY.jpg?size=720x480&quality=96&sign=6bb57af0294a85ea1979346ca12e0263&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(13)"  >
+                <img src="https://sun9-46.userapi.com/impf/c621618/v621618023/17a9/9me3Cn2YVHQ.jpg?size=586x513&quality=96&sign=0666367d740dada7a9c2898280553ad2&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(14)"  >
+                <img src="https://sun9-78.userapi.com/impf/c621618/v621618023/2067/n2k6L4rkhAI.jpg?size=425x358&quality=96&sign=f99ce61a99f986692786707b5df7d9d9&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(15)"  >
+                <img src="https://sun9-5.userapi.com/impf/c621618/v621618023/21b4/fTisrV6B8yQ.jpg?size=600x800&quality=96&sign=3d3107c32e05e5312ed92392a65e9752&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(16)"  >
+                <img src="https://sun9-77.userapi.com/impf/c621618/v621618023/21a4/4hytIyKnaZs.jpg?size=800x600&quality=96&sign=cc9858a5ef152b34a83b5991d9b19d2d&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(17)"  >
+                <img src="https://sun9-14.userapi.com/impf/c621618/v621618023/20af/cd_KVv6SxK4.jpg?size=600x413&quality=96&sign=a3b552487a11b8388c57e1c2bcd1deec&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(18)"  >
+                <img src="https://sun9-67.userapi.com/impf/c621618/v621618023/1f66/_59Piy7AEEE.jpg?size=240x320&quality=96&sign=bf699dde41682b755e01bc443eee3589&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(19)"  >
+                <img src="https://sun9-32.userapi.com/impf/c621618/v621618023/21c4/1rnM7YxAKAs.jpg?size=600x800&quality=96&sign=abf7a9a9070c8b0818ee5bab32f8516d&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(20)"  >
+                <img src="https://sun9-4.userapi.com/impf/c621618/v621618023/20a1/tRuyRUVftbg.jpg?size=286x286&quality=96&sign=a4d27e0aa2daa11dba45a387acc0dede&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(21)"  >
+                <img src="https://sun9-62.userapi.com/impf/c621618/v621618023/1f3c/V6pzxSj0xj4.jpg?size=240x320&quality=96&sign=438d7a8b291bb535a4a6f85414649db6&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(22)"  >
+                <img src="https://sun9-40.userapi.com/impf/c621618/v621618023/1cbf/mv3ylxo6FiA.jpg?size=480x740&quality=96&sign=86b87233cb0af79a591376774a34cb3f&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(23)"  >
+                <img src="https://sun9-28.userapi.com/impf/c621618/v621618023/1ec9/J9B4G13MUus.jpg?size=240x320&quality=96&sign=7141003917e73d058c218321d29799a3&type=album"
+                    id="image">
+            </figure>
+            <figure onclick="EnlargeImage(24)">
+                <img src="https://sun9-23.userapi.com/impf/c621618/v621618023/19ca/iDFFsDjE5wk.jpg?size=725x480&quality=96&sign=d28498f624df666ee7a81a867bdfcb92&type=album"
+                    id="image">
+            </figure>
+        </div>
+
+        <!-- увеличение картинки -->
+        <div class="enlarged-image hidden">
+            <button id="close"><img src="../static/images/close.svg"></button>
+            <img id="enlarged-image" src="">
+        </div>
+
+
+        <!-- участники группы -->
+        <h1>Участники группы</h1>
+        <section class="members">
+            <a href="biography/gorshok.html" title="Михаил Горшенев"><img
+                    src="../static/images/members/mihail-gorshenev.jpg"></a>
+            <a href="biography/aleksandr-shhigolev.html" title="Александр Щиголев"><img
+                    src="../static/images/members/aleksandr-shhigolev.jpg" alt=""></a>
+            <a href="biography/yakov-tsvirkunov.html" title="Яков Цвиркунов"><img
+                    src="../static/images/members/yakov-tsvirkunov.jpg" alt=""></a>
+            <a href="biography/aleksandr-leontev.html" title="Александр Леонтьев"><img
+                    src="../static/images/members/aleksandr-leontev.jpg" alt=""></a>
+            <a href="biography/pavel-sazhinov.html" title="Павел Сажинов"><img
+                    src="../static/images/members/pavel-sazhinov.jpg" alt=""></a>
+            <a href="biography/sergey-zaharov.html" title="Сергей Захаров"><img
+                    src="../static/images/members/sergey-zaharov.jpg" alt=""></a>
+        </section>
+        <a href="all-members.html" class="other-members">ВСЕ УЧАСТНИКИ</a>
+    </main>
+    <footer>
+        <h4>Архивы "Король и Шут"</h4>
+    </footer>
+    <script src="../static/scripts/gallery.js"></script>
+    <script src="../static/scripts/main-scripts.js"></script>
+</body>
+
+</html>

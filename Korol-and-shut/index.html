@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles/main.css">
+    <link rel="stylesheet" href="static/styles/main-styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Король и Шут</title>
+</head>
+
+<body>
+    <!-- загрузка -->
+    <div id="loader">
+        <img src="static/images/loader_image.jpeg" alt="">
+        <h1>Загрузка...</h1>
+    </div>
+
+    <!-- скрол к наву -->
+    <button href="#" id="scroll-to-top"><img src="static/images/arrow-up.svg" alt=""></button>
+
+    <header>
+        <nav>
+            <a href="templates/main.html" class="nav-logo"><img src="static/images/logo.svg" alt=""></a>
+            <div class="desktop nav-buttons">
+                <a href="templates/discography.html" class="nav-button">Дискография</a>
+                <a href="templates/biography.html" class="nav-button">Горшок</a>
+                <a href="templates/all-members.html" class="nav-button">Участники</a>
+                <a href="templates/gallery.html" class="nav-button">Галлерея</a>
+            </div>
+
+            <button><img src="static/images/menu.svg" alt="" onclick="OpenCloseNavbar()"></button>
+            <!-- open navbuttons -->
+            <div class="mobile" id="">
+                <a href="templates/discography.html" class="nav-button">Дискография</a>
+                <a href="templates/biography.html" class="nav-button">Горшок</a>
+                <a href="templates/all-members.html" class="nav-button">Участники</a>
+                <a href="templates/gallery.html" class="nav-button">Галлерея</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- карусель с составами Король и шут -->
+        <section class="main-carousel">
+            <h1><b>Король и Шут</b></h1>
+            <img src="static/images/squad/squad1.jpg" id="MainSlide1" alt="" class="carousel-opened">
+            <img src="static/images/squad/squad2.jpg" id="MainSlide2" alt="" class="carousel-hidden hidden">
+            <img src="static/images/squad/squad3.jpg" id="MainSlide3" alt="" class="carousel-hidden hidden">
+            <img src="static/images/squad/squad4.jpg" id="MainSlide4" alt="" class="carousel-hidden hidden">
+            <img src="static/images/squad/squad5.jpg" id="MainSlide5" alt="" class="carousel-hidden hidden">
+        </section>
+
+        <!-- плеер -->
+        <section class="block music">
+            <div class="music-player">
+                <div id="player">
+                    <img src="" alt="Картинка композиции" />
+                    <h1>Название композиции</h1>
+                    <audio controls>
+                        <source src="" type="audio/mpeg" />
+                    </audio>
+                    <div class="change">
+                        <button id="prev"><span><img src="static/images/arrow-prev.svg" alt=""></span></button>
+                        <button id="next"><span><img src="static/images/arrow-next.svg" alt=""></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="music-text">
+                <p>
+                    <!--текст песни-->
+                </p>
+            </div>
+        </section>
+
+        <section class="block story">
+            <div class="images">
+                <img src="static/images/gorshok.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Михаил Юрьевич Горшенев(Горшок)</h1>
+                <p>
+                    Михаил Горшенев, известный большинству как Шнур, родился в маленьком городе Верхняя Пышма, в
+                    Уральском регионе России, в 1971 году. Его отец был маляром, а мать работала в швейной мастерской.
+                    Михаил был младшим из двух братьев и всегда был увлечен творчеством
+                    и музыкой. С детства он проявлял яркие творческие способности и часто выступал на школьных
+                    мероприятиях.
+                    <br> <br> После окончания школы Михаил поступил на факультет журналистики Уральского
+                    государственного университета, который успешно закончил в 1993 году. Когда он был студентом, он
+                    начал играть на гитаре и участвовать в музыкальных
+                    группах, но не предполагал даже в мечтах, что его творческий путь приведет его к столь популярной
+                    музыкальной группе, как "Король и Шут".
+                    <br> <br> После окончания университета Михаил работал как журналист в газете, а в свободное время
+                    продолжал заниматься музыкой. Он встретил Виктора "Хорса" Троицкого, который порекомендовал ему
+                    квартиру, где он мог бы жить и практиковаться
+                    со своей группой. В этой квартире Михаил и его друзья основали оригинальную музыкальную группу "Кино
+                    и Шут". В 1988 году группу переименовали в "Король и Шут".
+                </p>
+            </div>
+        </section>
+
+        <!-- фильм -->
+        <section class="block film">
+            <div class="content">
+                <h1>Сериал</h1>
+                <p>
+                    <strong>
+                        Чтобы сбежать от реальности, они изобрели свой мир — с колдунами и лесниками. Главный сериал
+                        весны
+                    </strong>
+                    <br> Страна: Россия <br> Год выпуска: 2023 <br> Жанр: Фантастика, Драма <br> Количество серий: 8
+                    <br> Продолжительность: 52 минуты <br> Режиссер: Рустам Мосафир <br> В ролях: Константин Плотников,
+                    Влад Коноплёв, Даниил Вахрушев, Илья
+                    Ловкий, Данила Рассомахин, Ян Ильвес, Андрей Князев, Васса Бокова, Дарья Мельникова, Вера Вольт,
+                    Валерия Зоидова, Евгений Ткачук, Александр Адабашьян, Александр Клюквин, Роман Притула, Павел
+                    Братковский, Константин Фисенко, Анна Лаврентьева,
+                    Евгения Дмитриева
+                    <br>
+                    <a href="">Смотреть сериал онлайн</a>
+                </p>
+            </div>
+            <div class="images">
+                <img src="static/images/film.jpg" alt="">
+            </div>
+            <h1 class="mobile-title">Сериал</h1>
+        </section>
+
+        <h1 style="color:rgb(255, 170, 22); padding-left: 100px; font-family: 'Old Standard TT', serif"
+            class="discography-title">Дискография</h1>
+
+        <!-- карусель албомов -->
+        <section class="discography-carousel">
+            <div class="three-albums">
+                <a href="templates/disk.html" title="Акустический альбом — 17 песен"><img
+                        src="static/images/albums/acoustic.jpg" alt=""></a>
+                <a href="templates/disk.html" title="Бунт на корабле — 14 песен"><img
+                        src="static/images/albums/bunt-na-korable.jpg" alt=""></a>
+                <a href="templates/disk.html" title="Страшные Сказки — 20 песен"><img
+                        src="static/images/albums/ctrashnyie-skazki.jpg" alt=""></a>
+            </div>
+            <div class="three-albums">
+                <a href="templates/disk.html" title="Ели Мясо Мужики — 19 песен"><img
+                        src="static/images/albums/eli-myaso-muzhiki.jpg" alt=""></a>
+                <a href="templates/disk.html" title="Герои и Злодеи — 13 песен"><img
+                        src="static/images/albums/geroi-i-zlodei.jpg" alt=""></a>
+                <a href="templates/disk.html" title="Как в старой сказке — 17 песен"><img
+                        src="static/images/albums/kak-v-staroy-skazke.jpg" alt=""></a>
+            </div>
+            <div class="three-albums">
+                <a href="templates/disk.html" title="Камнем по Голове — 21 песен"><img
+                        src="static/images/albums/kamnem-po-golove.jpg" alt=""></a>
+                <a href="templates/disk.html" title="Концерт в Олимпийском — 21 песен"><img
+                        src="static/images/albums/kontsert-v-olimpiyskom.jpg" alt=""></a>
+                <a href="templates/disk.html" title="Король и Шут — 17 песен"><img src="static/images/albums/korol-i-shut.jpg"
+                        alt=""></a>
+            </div>
+            <div class="three-albums">
+                <a href="templates/disk.html" title="Мёртвый Анархист — 33 песен"><img
+                        src="static/images/albums/myortvyiy-anarhist.jpg" alt=""></a>
+                <a href="templates/disk.html" title="Праздник Скоморох — 21 песен"><img
+                        src="static/images/albums/prazdnik-skomoroh.jpg" alt=""></a>
+                <a href="templates/disk.html" title="Продавец Кошмаров — 16 песен"><img
+                        src="static/images/albums/prodavets-koshmarov.jpg" alt=""></a>
+            </div>
+            <div class="three-albums">
+                <a href="templates/disk.html" title="Собрание — 26 песен"><img src="static/images/albums/sobranie.jpg"
+                        alt=""></a>
+                <a href="templates/disk.html" title="Страшные Истории. Том 1 — 19 песен"><img
+                        src="static/images/albums/strashnyie-istorii-tom-1.jpg" alt=""></a>
+                <a href="templates/disk.html" title="Театр Демона — 12 песен"><img src="static/images/albums/teatr-demona.jpg"
+                        alt=""></a>
+            </div>
+            <div class="three-albums">
+                <a href="templates/disk.html" title="Тень Клоуна — 16 песен"><img src="static/images/albums/ten-klouna.jpg"
+                        alt=""></a>
+                <a href="templates/disk.html" title="TODD - Акт 1. «Праздник Крови» — 11 песен"><img
+                        src="static/images/albums/todd-akt-1-prazdnik-krovi.jpg" alt=""></a>
+                <a href="templates/disk.html" title="TODD - Акт 2. «На Краю» — 10 песен"><img
+                        src="static/images/albums/todd-akt-2-na-krayu.jpg" alt=""></a>
+            </div>
+            <div class="three-albums">
+                <a href="templates/disk.html" title="Жаль нет ружья! — 17 песен"><img
+                        src="static/images/albums/zhal-net-ruzhya.jpg" alt=""></a>
+            </div>
+            <button class="first-button" onclick="prevDisc(7)"><img src="static/images//arrow-back.svg"
+                    alt=""></button>
+            <button class="second-button" onclick="nextDisc(7)"><img src="static/images//arrow-forward.svg"
+                    alt=""></button>
+        </section>
+
+        <!-- небольшие сведения о группе -->
+        <section class="block group-story">
+            <div class="images">
+                <img src="static/images/korol-i-shut-logo.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h1>Король и Шут</h1>
+                <p>КиШ – группа, которая никого не оставит равнодушным. Своим уникальным стилем и музыкальными решениями
+                    они привлекают тысячи поклонников по всему миру. Несмотря на то, что группа образовалась уже более
+                    тридцати лет назад, ее песни до сих
+                    пор звучат на радио и клубах. Одна из главных особенностей КиШ – это умение сочетать разные жанры,
+                    словно составляя головоломки из музыкальных элементов. В их композициях можно услышать элементы
+                    рока, поп-музыки, хип-хопа, фолка и
+                    многих других стилей. Песни группы наполнены интригующими текстами, которые затрагивают важные темы,
+                    такие как политика, протест, любовь и история. За годы своей карьеры КиШ выпустили множество
+                    альбомов, каждый из которых имеет свой
+                    уникальный звук и настроение. Один из самых известных альбомов – это «Железный» (1996), который стал
+                    настоящим прорывом для группы. В альбоме были сочетаны разные стили и идеи, а результатом стали
+                    хиты, такие как «Железный человек»,
+                    «Ариадна» и «Единственная». Но не только музыка является главной составляющей успеха КиШ. Группа
+                    известна своими живыми выступлениями, которые превращаются в настоящее шоу. Участники группы не
+                    только играют на своих инструментах, но
+                    и показывают яркие хореографические номера, наряжаются в яркие костюмы и используют различные
+                    эффекты. Несмотря на свою популярность и широкую аудиторию, КиШ всегда оставались верными своим
+                    идеалам и принципам. Они выступают за свободу
+                    слова, защиту прав человека и против насилия. Эти темы отражены во многих увлекательных песнях,
+                    таких как «Армагеддон», «Бумбокс», «Сокол» и «Иуда».</p>
+            </div>
+        </section>
+
+        <!-- участники группы -->
+        <h1 style="color:rgb(255, 170, 22); padding-left: 100px; font-family: 'Old Standard TT', serif"
+            class="members-title">Участники группы</h1>
+        <section class="members">
+            <a href="templates/biography.html" title="Михаил Горшенев"><img
+                    src="static/images/members/mihail-gorshenev.jpg"></a>
+            <a href="templates/biography.html" title="Александр Щиголев"><img
+                    src="static/images/members/aleksandr-shhigolev.jpg" alt=""></a>
+            <a href="templates/biography.html" title="Яков Цвиркунов"><img src="static/images/members/yakov-tsvirkunov.jpg"
+                    alt=""></a>
+            <a href="templates/biography.html" title="Александр Леонтьев"><img
+                    src="static/images/members/aleksandr-leontev.jpg" alt=""></a>
+            <a href="templates/biography.html" title="Павел Сажинов"><img src="static/images/members/pavel-sazhinov.jpg"
+                    alt=""></a>
+            <a href="templates/biography.html" title="Сергей Захаров"><img src="static/images/members/sergey-zaharov.jpg"
+                    alt=""></a>
+        </section>
+        <a href="templates/all-members.html" class="other-members">ВСЕ УЧАСТНИКИ</a>
+    </main>
+    <footer>
+        <h4>Архивы "Король и Шут"</h4>
+    </footer>
+    <script src="static/scripts/main.js"></script>
+    <script src="static/scripts/main-scripts.js"></script>
+</body>
+
+</html>

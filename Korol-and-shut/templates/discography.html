@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/discography.css">
+    <link rel="stylesheet" href="../static/styles/main-styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Дискография</title>
+</head>
+
+<body>
+    <!-- загрузка -->
+    <div id="loader">
+        <img src="../static/images/loader_image.jpeg" alt="">
+        <h1>Загрузка...</h1>
+    </div>
+
+    <!-- скрол к наву -->
+    <button href="#" id="scroll-to-top"><img src="../static/images/arrow-up.svg" alt=""></button>
+
+    <header>
+        <nav>
+            <a href="main.html" class="nav-logo"><img src="../static/images/logo.svg" alt=""></a>
+            <div class="desktop nav-buttons">
+                <a href="discography.html" class="nav-button active">Дискография</a>
+                <a href="biography.html" class="nav-button">Горшок</a>
+                <a href="all-members.html" class="nav-button">Участники</a>
+                <a href="gallery.html" class="nav-button">Галлерея</a>
+            </div>
+
+            <button><img src="../static/images/menu.svg" alt="" onclick="OpenCloseNavbar()"></button>
+            <!-- open navbuttons -->
+            <div class="mobile" id="">
+                <a href="discography.html" class="nav-button active">Дискография</a>
+                <a href="biography.html" class="nav-button">Горшок</a>
+                <a href="all-members.html" class="nav-button">Участники</a>
+                <a href="gallery.html" class="nav-button">Галлерея</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- дискография -->
+        <h1>Дискография</h1>
+        <section class="discography">
+            <a href="disk.html" title="Акустический альбом — 17 песен"><img src="../static/images/albums/acoustic.jpg"
+                    alt=""></a>
+        </section>
+
+        <!-- участники группы -->
+        <h1 style="color:rgb(255, 170, 22); padding-left: 100px; font-family: 'Old Standard TT', serif">Участники группы
+        </h1>
+        <section class="members">
+            <a href="biography.html" title="Михаил Горшенев"><img
+                    src="../static/images/members/mihail-gorshenev.jpg"></a>
+            <a href="biography.html" title="Александр Щиголев"><img
+                    src="../static/images/members/aleksandr-shhigolev.jpg" alt=""></a>
+            <a href="biography.html" title="Яков Цвиркунов"><img src="../static/images/members/yakov-tsvirkunov.jpg"
+                    alt=""></a>
+            <a href="biography.html" title="Александр Леонтьев"><img
+                    src="../static/images/members/aleksandr-leontev.jpg" alt=""></a>
+            <a href="biography.html" title="Павел Сажинов"><img src="../static/images/members/pavel-sazhinov.jpg"
+                    alt=""></a>
+            <a href="biography.html" title="Сергей Захаров"><img src="../static/images/members/sergey-zaharov.jpg"
+                    alt=""></a>
+        </section>
+        <a href="all-members.html" class="other-members">ВСЕ УЧАСТНИКИ</a>
+    </main>
+    <footer>
+        <h4>Архивы "Король и Шут"</h4>
+    </footer>
+    <script src="../static/scripts/main-scripts.js"></script>
+</body>
+
+</html>

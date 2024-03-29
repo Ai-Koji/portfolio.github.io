@@ -1,0 +1,44 @@
+h1 {
+    color: rgb(255, 170, 22);
+    padding-top: 20px;
+    padding-left: 50px;
+    font-family: 'Old Standard TT', serif;
+    font-size: 20pt;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #aaa;
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 15pt;
+    margin-top: 0;
+}
+
+.content img {
+    width: 900px;
+    margin: 3%;
+    margin-left: 3%;
+}
+
+@media (max-width:1000px) {
+    .content img {
+        width: 100%;
+    }
+}
+
+.content strong {
+    color: white;
+}
+
+.content p {
+    color: #aaa;
+    background-color: rgba(255, 255, 255, 0.01);
+    padding: 3%;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 28px
+}

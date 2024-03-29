@@ -1,0 +1,33 @@
+h1 {
+    color: rgb(255, 170, 22);
+    padding-top: 20px;
+    padding-left: 50px;
+    font-family: 'Old Standard TT', serif;
+}
+
+
+.discography {
+    text-align: center;
+}
+
+.discography a {
+    display: inline-block;
+    width: 200px;
+    margin-right: 500px;
+    border-radius: 5%;
+    margin: 3% 3%;
+    padding: 0.75%;
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: background-color .5s ease-in-out;
+}
+
+
+.discography a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.discography a img {
+    width: 100%;
+    margin: 10px;
+    margin: 0;
+}

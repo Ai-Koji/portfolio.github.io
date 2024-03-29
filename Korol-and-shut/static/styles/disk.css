@@ -1,0 +1,232 @@
+.blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* left */
+
+.left-blocks {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    padding: 1%;
+}
+
+.image {
+    width: 95%;
+    border-radius: 5%;
+    padding: 1%;
+}
+
+.image img {
+    width: 100%;
+}
+
+.about-album h2 {
+    color: #d73916;
+}
+
+.other-albums {
+    width: 95%;
+    padding: 5%;
+}
+
+.other-albums a {
+    padding: 1%;
+    display: inline-block;
+    width: 20%;
+    border-radius: 10px;
+}
+
+.other-albums img {
+    width: 100%;
+    border-radius: 10px;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.other-albums img:hover {
+    opacity: 0.4;
+}
+
+/* right */
+
+.right-blocks {
+    display: flex;
+    flex-direction: column;
+    width: 67.5vw;
+    padding: 1%;
+}
+
+.player {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    font-size: 18px;
+    width: 35%;
+}
+
+.header h2 {
+    margin-top: 3%;
+}
+
+.change-compozition {
+    width: 50%;
+}
+
+.change-compozition button {
+    background: none;
+    border: none;
+}
+
+.composition-list button {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-size: 15px;
+    margin: 2px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #d73916;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.composition-list button:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.125);
+}
+
+.composition-list button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.polygraphy {
+    margin-top: 50px;
+    text-align: right;
+}
+
+.polygraphy img {
+    width: 600px;
+    margin: 0 auto;
+    margin-right: 20px;
+    margin-top: 20px;
+    display: block;
+}
+
+.composition-list button.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+@media screen and (max-width: 1600px) {
+    .blocks {
+        justify-content: center;
+    }
+
+    .right-blocks {
+        width: 60%;
+    }
+
+    .change-compozition {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .change-compozition audio {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .blocks {
+        justify-content: center;
+        padding: 0 5%;
+    }
+
+    .blocks-title {
+        padding: 0 5% !important;
+    }
+
+    .left-blocks {
+        width: 35%;
+    }
+
+    .right-blocks {
+        flex: 1;
+    }
+
+    .player {
+        flex-direction: column;
+    }
+
+    .change-compozition {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .blocks {
+        flex-direction: column;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .left-blocks {
+        width: 100%;
+    }
+
+    .left-blocks .image {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .right-blocks {
+        width: 100%;
+    }
+
+    .player {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .player {
+        flex-direction: column;
+    }
+
+    .polygraphy img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .left-blocks .image {
+        width: 250px;
+    }
+
+    .other-albums {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .other-albums a {
+        width: 35%;
+    }
+}
+
+.polygraphy img {
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}

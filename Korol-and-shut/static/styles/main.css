@@ -1,0 +1,275 @@
+/* main-carousel */
+.main-carousel {
+    overflow: hidden;
+    position: relative;
+    height: 800px;
+}
+
+.main-carousel img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.42;
+}
+
+.carousel-opened {
+    animation: carousel-opening 3s 1;
+}
+
+.carousel-hidden {
+    animation-fill-mode: forwards;
+    animation: carousel-hidding 3s 1;
+}
+
+@keyframes carousel-opening {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.425;
+    }
+}
+
+@keyframes carousel-hidding {
+    0% {
+        display: block;
+        opacity: 0.425;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+        pointer-events: none;
+    }
+}
+
+.main-carousel h1 {
+    color: rgb(255, 203, 112);
+    font-family: 'Old Standard TT', serif;
+    font-size: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    z-index: 1;
+}
+
+/* music-player */
+.music-player {
+    width: 50%;
+    height: 500px;
+    border-radius: 10px;
+    margin: 2%;
+}
+
+.music-text {
+    width: 30%;
+    height: 500px;
+    border-radius: 10px;
+    margin: 2%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 2px;
+    overflow: auto;
+}
+
+.music-text p {
+    padding: 25px;
+    padding-top: 10px;
+}
+
+#player {
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+#player img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+#player h1 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    color: white;
+}
+
+#player audio {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#player button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    outline: none;
+    animation-duration: 3s ease;
+}
+
+.change {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw, 0;
+}
+
+#prev {
+    padding: 0;
+}
+
+/* story */
+.block {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.content {
+    color: #aaa;
+    line-height: 22px;
+}
+
+.content h1 {
+    color: #d73916;
+    font-family: 'Old Standard TT', serif;
+}
+
+.content strong {
+    color: white;
+}
+
+.content a {
+    color: #ff6a49;
+}
+
+/* горшок */
+.story .images {
+    width: 25%;
+    margin: 2%;
+    margin-left: 10%;
+}
+
+.images img {
+    width: 80%;
+}
+
+.story .content {
+    width: 70%;
+    margin: 5%;
+    margin-right: 7%;
+}
+
+/* фильм */
+.film .images {
+    width: 60%;
+    margin: 2%;
+    margin-left: 10%;
+}
+
+.film .content {
+    width: 40%;
+    margin: 5%;
+    margin-right: 7%;
+}
+
+/* карусель дикографии */
+.discography-carousel {
+    position: relative;
+    white-space: nowrap;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+}
+
+.three-albums {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    vertical-align: top;
+    animation-fill-mode: forwards;
+    transition: transform 0.5s ease-in-out;
+}
+
+.three-albums a {
+    display: inline-block;
+    width: 200px;
+    margin-right: 500px;
+    border-radius: 5%;
+    margin: 3% 3%;
+    padding: 0.75%;
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.three-albums a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.three-albums a img {
+    width: 100%;
+    margin: 10px;
+    margin: 0;
+}
+
+.discography-carousel button {
+    position: absolute;
+    transform: translateY(-50%);
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.discography-carousel button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.first-button {
+    top: 50%;
+    left: 2%;
+}
+
+.second-button {
+    top: 50%;
+    right: 2%;
+}
+
+.group-story .images {
+    width: 50%;
+    margin: 2%;
+    margin-left: 10%;
+}
+
+.group-story .content {
+    width: 50%;
+    margin: 5%;
+    margin-right: 7%;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .block {
+    }
+}
