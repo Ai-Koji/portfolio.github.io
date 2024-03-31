@@ -59,3 +59,28 @@ h1 {
 td {
     border-bottom: 1px solid black;
 }
+
+table button {
+    padding: 0;
+    border: none;
+}
+
+.add-one {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 170, 0);
+}
+
+.add-one img {
+    width: 100%;
+}
+
+.remove-one {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 98, 0);
+}
+
+.remove-one img {
+    width: 100%;
+}
