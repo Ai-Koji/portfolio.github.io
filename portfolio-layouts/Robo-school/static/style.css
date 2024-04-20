@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #141024;
+    color: black;
+    font-family: 'Jost';
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+header .wrapper {
+    height: calc(100vh - 100px);
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 75px;
+}
+
+.header-navigate {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.header-contact {
+    text-align: right;
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 75px;
+}
+
+.header a {
+    color: white;
+    margin: 0 20px;
+}
+
+
+.header-title {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title-content {
+    width: 50%;
+}
+
+.header-title-content h1{
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.header-title-content p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 50px 0;
+}
+
+.header-title-content button {
+    font-family:Jost;
+    font-size:18px;
+    font-weight: 400;
+    text-align: center;
+    width:260px;
+    height:79px;
+    padding: 25px, 54px, 25px, 54px;
+    border-width:0px;
+    color:#fff;
+    border-radius:5px;
+    background-color:rgba(213, 32, 39, 1);
+}
+
+.header-title-content button:hover {
+    background-color: rgba(255, 57, 64, 1)
+}
+
+.header-title-image {
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+
+.header-title-image img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* main */
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-bottom: 100px;
+}
+
+/* Об школе */
+.content-about {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    color: black;
+}
+
+.content-about-header {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.content-about-header b{
+    font-weight: 600;
+}
+
+
+/* перечисление преимущест компании */
+.content-about-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+
+}
+
+.content-about-card h1 {
+    color: #D52027;
+    margin-bottom: 0;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.content-about-card p {
+    color: #141024 70%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* "Что вы получите после курса" */
+.content-result {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    color: black;
+}
+
+.content-result h1 {
+    margin-bottom: 0;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+/* перечисление результатов после курса */
+.content-result-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+.content-result-card h1 {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.content-result-card p {
+    color: #141024 70%;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* !!! */
+
+
+
+
+
+
+
+
+
+
+/* цены */
+.content-prices {
+    width: 100%;
+}
+
+/* набор из трех карточек */
+.content-prices-prices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+}
+
+.content-prices-header {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+/* карточки */
+.content-prices-price {
+    margin-top: 30px;
+    padding: 40px;
+    border: 1px solid #14102433;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.content-prices-price h2 {
+    margin: 0;
+    margin-bottom: 125px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.content-prices-price h1 {
+    margin-bottom: 0;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.content-result-card p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Главная черная карточка */
+.content-prices-price-main {
+    background: #141024;
+    color: white;
+    transform: scale(1.075);
+}
+
+/* кнопка */
+.content-prices-price-button {
+    font-size:18px;
+    margin-top: 20px;
+    padding: 25px 54px;
+    color:#fff;
+    border: none;
+    border-radius:5px;
+    background: #D52027;
+    transition: all ease-in-out 0.2s;
+}
+  
+.content-prices-price-button:hover {
+    background: #fb3037
+}
+                
+
+/* связь */
+.content-contact {
+    width: 100%;
+}
+
+/* подвал */
+footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: #D52027;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #141024;
+}
+
+.footer-contact {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+
+.footer-logo {
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 75px;
+}
+
+.footer-contact-number {
+    text-align: right;
+    font-size: 30px;
+    font-weight: 600;
+    margin-right: 75px;
+}
+
+.footer a {
+    color: white;
+    margin: 0 20px;
+}
+
+.footer-contact-title {
+    padding: 20px;
+}
+
+.footer-contact-title h1 {
+    margin: 0;
+}
+
+.footer-contact-form input {
+    margin: 0 auto;
+    width: 90%;
+    padding: 25px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-contact-form input[type="submit"] {
+    color: white;
+    background-color: #141024;
+    cursor: pointer;
+}
