@@ -1,0 +1,21 @@
+main {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.status-code {
+    font-size: 100pt;
+    font-weight: bold;
+}
+
+.code-title {
+    padding-top: 20px;
+    font-size: 20pt;
+}
+
+hr {
+    border: 1px solid black;
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+}
